@@ -3,20 +3,21 @@ export default function LinkIcon(props) {
     const { link, Icon, key } = props;
 
     return (
-        <div id="container">
-            <div id="halfclip">
-                <div className="halfcircle" id="clipped" />
-            </div>
+        <a
+            className="linkContainer"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <div id="container">
+                <div id="halfclip">
+                    <div className="halfcircle" id="clipped" />
+                </div>
 
-            <div className="halfcircle" id="fixed" />
-            <a
-                className="linkContainer"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+                <div className="halfcircle" id="fixed" />
+
                 <Icon className="barIcon" />
-            </a>
-        </div>
+            </div>
+        </a>
     );
 }

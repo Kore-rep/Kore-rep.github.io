@@ -1,9 +1,10 @@
 .barIcon {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     color: white;
     z-index: 10;
 }
+
 .linkContainer {
     display: flex;
     align-items: center;
@@ -15,10 +16,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
 }
-  
+
 #halfclip {
     width: 50%;
     height: 100%;
@@ -27,19 +28,19 @@
     overflow: hidden;
     transform-origin: left center;
 }
-  
+
 #container:hover #halfclip {
     animation: cliprotate 0.25s ease 1;
     transform: rotate(180deg);
 } 
-  
+
 @keyframes cliprotate {
     0% {transform: rotate(0deg);}
     50% {transform: rotate(0deg);}
     50.01% {transform: rotate(180deg);}
     100% {transform: rotate(180deg);}
 }
-  
+
 .halfcircle {
     box-sizing: border-box;
     height: 100%;
@@ -47,32 +48,31 @@
     position: absolute;
     border: solid 1px transparent;
     border-top-color: white;
-    border-left-color: white;
+    //border-left-color: white; uncomment for full circle effect
     border-radius: 50%;
 }
-  
+
 #clipped {
     width: 200%;
     transform: rotate(-45deg);
 }
+
 #container:hover #clipped {
     transform: rotate(135deg);
     animation: rotate .125s ease-in-out 2;
 }
-  
-  
+
 @keyframes rotate {
     0% {transform: rotate(-45deg);}
     100% {transform: rotate(135deg);}
 }
-  
-  
+
 #fixed {
     width: 100%;
     transform: rotate(135deg);  
     opacity: 0;
 }
-  
+
 #container:hover #fixed {
     opacity: 1;
     animation: showfixed .25s ease-in-out 1;
