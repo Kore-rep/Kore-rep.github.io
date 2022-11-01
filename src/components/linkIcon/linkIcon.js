@@ -13,9 +13,7 @@ export default function LinkIcon(props) {
                 <div id="halfclip">
                     <div className="halfcircle" id="clipped" />
                 </div>
-
                 <div className="halfcircle" id="fixed" />
-
                 <Icon className="barIcon" />
             </div>
         </a>
