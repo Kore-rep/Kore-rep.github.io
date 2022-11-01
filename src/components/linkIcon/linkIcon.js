@@ -1,10 +1,20 @@
 import './linkIcon.scss';
-export function LinkIcon(props) {
+export default function LinkIcon(props) {
     const { link, Icon } = props;
 
     return (
-        <a href={link}>
-            <Icon className="barIcon" />
-        </a>
+        // <div>
+        //
+        // </div>
+        <div id="container">
+            <div id="halfclip">
+                <div class="halfcircle" id="clipped" />
+            </div>
+
+            <div class="halfcircle" id="fixed" />
+            <a href={link} className="circleOutline">
+                <Icon className="barIcon" />
+            </a>
+        </div>
     );
 }
