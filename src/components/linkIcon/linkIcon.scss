@@ -1,26 +1,13 @@
-$circle-size: 40px;
-$half-size: 20px;
-$five-plus: 45px;
-
 .barIcon {
     width: 25px;
     height: 25px;
     color: white;
+    z-index: 10;
 }
-
-.circleOutline {
+.linkContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    //outline: 1px solid white;
-    height: $circle-size;
-    width: $circle-size;
-    border-radius: 50%;
-}
-
-.circleOutline:hover {
-    animation: border 2s ease 1 forwards;
-    cursor: pointer;
 }
 
 #container {
@@ -70,7 +57,7 @@ $five-plus: 45px;
 }
 #container:hover #clipped {
     transform: rotate(135deg);
-    animation: rotate .125s ease 2;
+    animation: rotate .125s ease-in-out 2;
 }
   
   
@@ -88,7 +75,7 @@ $five-plus: 45px;
   
 #container:hover #fixed {
     opacity: 1;
-    animation: showfixed .25s ease 1;
+    animation: showfixed .25s ease-in-out 1;
 }
 
 @keyframes showfixed {

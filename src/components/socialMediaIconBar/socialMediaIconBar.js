@@ -6,13 +6,25 @@ import { ReactComponent as EmailIcon } from '../../assets/icon-email.svg';
 
 export default function SocialMediaIconBar(props) {
     const linkedInIcon = (
-        <LinkIcon Icon={LinkedInIcon} link="https://www.linkedin.com" />
+        <LinkIcon
+            key="linkedIn"
+            Icon={LinkedInIcon}
+            link="https://www.linkedin.com"
+        />
     );
     const githubIcon = (
-        <LinkIcon Icon={GithubIcon} link="https://www.github.com" />
+        <LinkIcon
+            key="github"
+            Icon={GithubIcon}
+            link="https://www.github.com"
+        />
     );
     const emailIcon = (
-        <LinkIcon Icon={EmailIcon} link="mailto:anguslongmora@gmail.com" />
+        <LinkIcon
+            key="email"
+            Icon={EmailIcon}
+            link="mailto:anguslongmora@gmail.com"
+        />
     );
     const iconsList = [linkedInIcon, githubIcon, emailIcon];
     return <IconBar icons={iconsList} />;
