@@ -30,7 +30,7 @@
 }
 
 #container:hover #halfclip {
-    animation: cliprotate 0.25s ease 1;
+    animation: cliprotate .25s ease-in-out 1;
     transform: rotate(180deg);
 } 
 

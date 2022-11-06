@@ -1,12 +1,19 @@
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
-import HomeScreen from './components/homeScreen/homeScreen';
+import { createBrowserRouter } from "react-router-dom";
+import ErrorScreen from "./components/errorScreen/errorScreen";
+import HomeScreen from "./components/homeScreen/homeScreen";
+import SplashScreen from "./components/splashScreen/splashScreen";
 
 export function generateRouter() {
-    const router = createBrowserRouter([
-        {
-            path: '/',
-            element: <HomeScreen />,
-        },
-    ]);
-    return <RouterProvider router={router} />;
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomeScreen />,
+      errorElement: <ErrorScreen />,
+    },
+    {
+      path: "splash",
+      element: <SplashScreen />,
+    },
+  ]);
+  return router;
 }
