@@ -7,8 +7,10 @@ export default function HomeScreen() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to={`splash`}>Angus Longmore</Link>
-        <h2>Get in contact</h2>
+        <Link className="link-text" to={`splash`}>
+          Angus Longmore
+        </Link>
+        <h4>Software developer at REPL Group, Part of Accenture</h4>
         <SocialMediaIconBar />
       </header>
     </div>

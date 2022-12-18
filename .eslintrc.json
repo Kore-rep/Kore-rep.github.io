@@ -23,6 +23,7 @@
         "react/react-in-jsx-scope": "off",
         "prettier/prettier": ["error"],
         "no-unused-vars": ["warn"],
-        "react/self-closing-comp": ["warn", {"component": true, "html": true}]
+        "react/self-closing-comp": ["warn", {"component": true, "html": true}],
+        "react/prop-types": ["off"]
     }
 }

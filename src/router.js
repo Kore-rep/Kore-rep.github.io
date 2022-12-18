@@ -11,7 +11,7 @@ export function generateRouter() {
       errorElement: <ErrorScreen />,
     },
     {
-      path: "splash",
+      path: "/splash",
       element: <SplashScreen />,
     },
   ]);

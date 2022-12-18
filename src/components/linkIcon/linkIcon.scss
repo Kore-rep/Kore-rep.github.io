@@ -1,7 +1,7 @@
 .barIcon {
     width: 40px;
     height: 40px;
-    color: white;
+    color: black;
     z-index: 10;
 }
 
@@ -47,7 +47,7 @@
     right: 0px;
     position: absolute;
     border: solid 1px transparent;
-    border-top-color: white;
+    border-top-color: black;
     //border-left-color: white; uncomment for full circle effect
     border-radius: 50%;
 }
