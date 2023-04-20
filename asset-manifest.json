@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Kore-rep.github.io/static/css/main.f04718d3.css",
-    "main.js": "/Kore-rep.github.io/static/js/main.918420ed.js",
+    "main.js": "/Kore-rep.github.io/static/js/main.f8566c01.js",
     "static/js/787.5809834d.chunk.js": "/Kore-rep.github.io/static/js/787.5809834d.chunk.js",
     "static/media/icon-github.svg": "/Kore-rep.github.io/static/media/icon-github.4d0bc36f4321b30166b0dc5dd670d65d.svg",
     "static/media/icon-email.svg": "/Kore-rep.github.io/static/media/icon-email.8f921fe32d20ffcc79807038cf885742.svg",
     "static/media/icon-linkedin.svg": "/Kore-rep.github.io/static/media/icon-linkedin.453cbb81337c9fb76a312956d05280f3.svg",
     "index.html": "/Kore-rep.github.io/index.html",
     "main.f04718d3.css.map": "/Kore-rep.github.io/static/css/main.f04718d3.css.map",
-    "main.918420ed.js.map": "/Kore-rep.github.io/static/js/main.918420ed.js.map",
+    "main.f8566c01.js.map": "/Kore-rep.github.io/static/js/main.f8566c01.js.map",
     "787.5809834d.chunk.js.map": "/Kore-rep.github.io/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f04718d3.css",
-    "static/js/main.918420ed.js"
+    "static/js/main.f8566c01.js"
   ]
 }
