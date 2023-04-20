@@ -1,6 +1,6 @@
-import './iconBar.scss';
+import "./iconBar.scss";
 
 export default function IconBar(props) {
-    const { icons } = props;
-    return <div className="iconContainer">{icons}</div>;
+  const { icons } = props;
+  return <div className="iconContainer">{icons}</div>;
 }
