@@ -1,8 +1,8 @@
 import IconBar from "../iconBar/iconBar";
 import LinkIcon from "../linkIcon/linkIcon";
-import { ReactComponent as LinkedInIcon } from "../../assets/icon-linkedin.svg";
-import { ReactComponent as GithubIcon } from "../../assets/icon-github.svg";
-import { ReactComponent as EmailIcon } from "../../assets/icon-email.svg";
+import { FaEnvelope as EmailIcon } from "react-icons/fa";
+import { FaGithubSquare as GithubIcon } from "react-icons/fa";
+import { FaLinkedin as LinkedInIcon } from "react-icons/fa";
 
 export default function SocialMediaIconBar() {
   const linkedInIcon = (

@@ -6,12 +6,14 @@ import "./homeScreen.scss";
 export default function HomeScreen() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Angus Longmore</h1>
+      <div className="fade-in">
+        <header className="App-header">
+          <h1>Angus Longmore</h1>
 
-        <h4>Software developer at REPL Group, Part of Accenture</h4>
-        <SocialMediaIconBar />
-      </header>
+          <h4 className="">Software developer at MRI Software</h4>
+          <SocialMediaIconBar />
+        </header>
+      </div>
     </div>
   );
 }
