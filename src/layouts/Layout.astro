@@ -45,5 +45,31 @@ const image = new URL("/android-chrome-512x512.png", Astro.site);
   </head>
   <body>
     <slot />
+    <script>
+      // Easter egg: type "do a barrel roll" anywhere, or open the page with #doabarrelroll.
+      const phrase = "doabarrelroll";
+      let typed = "";
+
+      const roll = () => document.body.classList.add("barrel-roll");
+
+      document.body.addEventListener("animationend", (e) => {
+        if (e.target === document.body) document.body.classList.remove("barrel-roll");
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey || e.metaKey || e.altKey || !/^[a-z]$/i.test(e.key)) return;
+        typed = (typed + e.key.toLowerCase()).slice(-phrase.length);
+        if (typed === phrase) {
+          typed = "";
+          roll();
+        }
+      });
+
+      const checkHash = () => {
+        if (location.hash === `#${phrase}`) roll();
+      };
+      window.addEventListener("hashchange", checkHash);
+      checkHash();
+    </script>
   </body>
 </html>
