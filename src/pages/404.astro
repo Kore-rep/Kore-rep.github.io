@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config.js";
+---
+
+<Layout title={`Page not found | ${site.name}`} description="Page not found.">
+  <main>
+    <h1>404</h1>
+    <p>That page doesn't exist.</p>
+    <p>
+      <a href="/">Back to home</a>
+    </p>
+  </main>
+</Layout>
+
+<style>
+  main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+  }
+
+  a {
+    color: inherit;
+  }
+</style>
