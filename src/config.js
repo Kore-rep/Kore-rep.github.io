@@ -5,6 +5,6 @@ export const site = {
   links: {
     linkedin: "https://www.linkedin.com/in/angus-longmore-9b650817b/",
     github: "https://www.github.com/kore-rep",
-    email: "anguslongmora@gmail.com",
+    email: "angus@anguslongmore.com",
   },
 };
