@@ -29,6 +29,16 @@ body {
   }
 }
 
+.barrel-roll {
+  animation: barrel-roll 4s ease-in-out;
+}
+
+@keyframes barrel-roll {
+  to {
+    rotate: 360deg;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
